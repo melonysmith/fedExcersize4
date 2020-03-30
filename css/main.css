@@ -1,0 +1,28 @@
+.navbar,
+footer {
+    background: #8dc3d2;
+}
+
+.jumbotron-fluid {
+    background: url("../images/jumbotron-bg.jpg") center center  no-repeat;
+    background-size: cover;
+}
+
+.buttons {
+    background: #93a1be;
+    border: 0;
+}
+.buttons:hover {
+    background: #93a1be;
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+
+#dataOneHere,
+#dataTwoHere {
+    display: none;
+}
+
+canvas {
+    background: silver;
+}
