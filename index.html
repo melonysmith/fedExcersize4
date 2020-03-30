@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.com/libraries/Chart.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/chart.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <title>Exercise 4: COVID-19</title>
+  </head>
+
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <a class="navbar-brand" href="#">COVID-19 Data</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+      <ul class="navbar-nav mt-2">
+        <li class="nav-item ml-auto">
+          <a class="nav-link" href="#dataOne">Data One</a>
+        </li>
+        <li class="nav-item ml-auto">
+          <a class="nav-link" href="#dataTwo">Data Two</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <body>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Latest COVID-19 Data</h1>
+            <p class="lead">For the latest information regarding the COVID-19 virus please visit the Center for Disease Control by clicking the button below.</p>
+            <a class="btn btn-primary btn-lg buttons" href="https://www.cdc.gov/coronavirus/2019-ncov/index.html" target="_blank" role="button">Visit CDC.gov</a>
+        </div>
+    </div>
+
+    <div id="dataOne" class="container mt-5">
+        <h2>Data One</h2>
+        <div class="card">
+            <h5 class="card-header">COVID-19 Cases by Country</h5>
+            <div class="card-body card-body-one">
+                <p class="card-text">A list of COVID-19 cases by country.</p>
+                <button id="loadDataOneBtn" class="btn btn-primary buttons">Load Data</button>
+            </div>
+            <div id="dataOneHere" class="data-one-here"><canvas id="myBarChart" width="400" height="400"></canvas></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="dataTwo" class="container mt-5">
+        <h2>Data Two</h2>
+        <div class="card">
+            <h5 class="card-header">COVID-19 Cases by Country</h5>
+            <div class="card-body">
+                <p class="card-text">A list of COVID-19 cases by country.</p>
+                <button id="loadDataTwoBtn" class="btn btn-primary buttons">Load Data</button>
+            </div>
+            <div id="dataTwoHere" class="data-two-here">data two should load here</div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-5">
+        <div class="container text-center py-3">
+            <p class="text-white pt-2">by Mel</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  </body>
+
+</html>
