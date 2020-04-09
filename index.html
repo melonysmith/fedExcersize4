@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.com/libraries/Chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script type="text/javascript" src="js/app.js"></script>
-    <script type="text/javascript" src="js/chart.js"></script>
+    <!-- <script type="text/javascript" src="js/chart.js"></script> -->
     <link rel="stylesheet" href="css/main.css">
     <title>Exercise 4: COVID-19</title>
   </head>
@@ -43,26 +43,28 @@
     <div id="dataOne" class="container mt-5">
         <h2>Data One</h2>
         <div class="card">
-            <h5 class="card-header">COVID-19 Cases by Country</h5>
+            <h5 class="card-header">COVID-19 States</h5>
             <div class="card-body card-body-one">
-                <p class="card-text">A list of COVID-19 cases by country.</p>
-                <button id="loadDataOneBtn" class="btn btn-primary buttons">Load Data</button>
+                <p class="card-text">States of the United States with cases of COVID-19.</p>
             </div>
-            <div id="dataOneHere" class="data-one-here"><canvas id="myBarChart" width="400" height="400"></canvas></div>
+            <div id="dataOneHere" class="data-one-here">
+              <canvas id="barChart"></canvas>
             </div>
+          </div>
         </div>
     </div>
 
     <div id="dataTwo" class="container mt-5">
         <h2>Data Two</h2>
         <div class="card">
-            <h5 class="card-header">COVID-19 Cases by Country</h5>
+            <h5 class="card-header">COVID-19 Case Total</h5>
             <div class="card-body">
-                <p class="card-text">A list of COVID-19 cases by country.</p>
-                <button id="loadDataTwoBtn" class="btn btn-primary buttons">Load Data</button>
+                <p class="card-text">Total number of COVID-19 cases.</p>
             </div>
-            <div id="dataTwoHere" class="data-two-here">data two should load here</div>
+            <div id="dataTwoHere" class="data-two-here">
+              <canvas id="otherChart"></canvas>
             </div>
+          </div>
         </div>
     </div>
 

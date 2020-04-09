@@ -4,7 +4,7 @@ footer {
 }
 
 .jumbotron-fluid {
-    background: url("../images/jumbotron-bg.jpg") center center  no-repeat;
+    background: url("../images/jumbotron-bg.jpg") center center no-repeat;
     background-size: cover;
 }
 
@@ -18,11 +18,6 @@ footer {
     transition: all 0.5s;
 }
 
-#dataOneHere,
-#dataTwoHere {
-    display: none;
-}
-
 canvas {
-    background: silver;
+    width: 100%;
 }
